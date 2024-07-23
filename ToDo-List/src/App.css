@@ -1,0 +1,125 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  background-image: url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  /* Prevent the image from repeating */
+  background-size: cover;
+  /* Ensure the image covers the entire background */
+  background-position: center;
+  /* Center the image */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+main {
+  background: linear-gradient(to right, #ffe4b2 0%, #fcb09f 100%);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+/* Input Container styles */
+.input-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-Container>input {
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  margin-top: 20px;
+  padding: 0 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.input-Container>input:focus {
+  border-color: #f39c12;
+}
+
+.input-Container>button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-Container>button:hover {
+  background-color: #e67e22;
+}
+
+/* Todo Container styles */
+.Task-Container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo {
+  width: 100%;
+  max-width: 700px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fafafa;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.todo:hover {
+  background-color: #f0f0f0;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+}
+
+.action>button {
+  background-color: #e74c3c;
+  color: white;
+  height: 30px;
+  width: 75px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+  /* Added margin for space between checkbox and delete button */
+}
+
+.action>button:hover {
+  background-color: #c0392b;
+}
